@@ -28,7 +28,7 @@ rankall <- function(outcome,num="best") {
     
     ##Split by state
     df <- split(dfNonSplit, dfNonSplit$state)
-    #print(head(df,n=2)) here n=2 gives the data in 2 states. 
+    #print(head(df,n=2)) here n=2.
     
     ##Return hospital name in that state with lowest 30-day death rate
     # Run lapply
@@ -52,11 +52,7 @@ rankall <- function(outcome,num="best") {
     #here you don't have to use unlist if you use sapply instead of lapply above            
     data.frame(hospital=unlist(lapply.result),state=names(lapply.result),
                          row.names = names(lapply.result))
-    # note:here you dont have to give the row.names because by default
-    # you get the state names as row names(probably because you have split
-    # the data by state).you get the row names(states) and the hospital
-    # names if you remove the row.names and the state=names(...) data.
-     
+         
 }
     
     
