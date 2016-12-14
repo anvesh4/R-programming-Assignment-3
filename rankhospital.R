@@ -42,19 +42,18 @@ rankhospital <- function(state, outcome,num="best") {
     if(num == "best") {
     
     subset.state$hospital[1]
-    # print(subset.state[1,1])  this too works.but for some reason both of them 
-                                #together is not working
+    # print(subset.state[1,1])  
         
     }
     else if(num == "worst") {
         
-        #subset.state[nrow(subset.state$hospital),1] this ain't working.why?
+        #subset.state[nrow(subset.state$hospital),1]
         subset.state[nrow(subset.state),1]
         
     }
     else {
         subset.state[num,1]
-        #subset.state$hospital[num] this too works!!!
+        #subset.state$hospital[num]
     }
     
     
