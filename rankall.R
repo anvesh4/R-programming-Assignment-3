@@ -13,7 +13,7 @@ rankall <- function(outcome,num="best") {
     }
     
     
-    df.NAs <- data[,c(2,7,outcomevector[outcome])]	
+   df.NAs <- data[,c(2,7,outcomevector[outcome])]	
     names(df.NAs)<-c("hospital","state","outcome")
     #print(head(df.NAs))
     
