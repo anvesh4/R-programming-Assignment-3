@@ -42,5 +42,4 @@ subset.state <- df[df$state==state,]
 
 subset.state$hospital[1]
 
-    
 }
